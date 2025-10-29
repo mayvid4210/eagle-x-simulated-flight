@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mayvid4210.github.io/eagle-x-simulated-flight",
+  "homepage": "https://mayvid4210.github.io/eagle-x-simulated-flight/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
