@@ -9,7 +9,7 @@ export default defineConfig({
     host: "::",
     port: 8080,
   },
-  base: "/eagle-x-simulated-flight/",
+  base: "./",
   plugins: [react(), componentTagger()],
   resolve: {
     alias: {
