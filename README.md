@@ -4,11 +4,11 @@ EagleX is a next-generation mobility simulator that blends physics, AI, and emot
 
 Problem Statement
 
-Most simulators focus only on data. EagleX adds the missing human element — emotion and adaptability — creating a truly engaging, lifelike simulation.
+Most simulators focus only on data. EagleX adds the missing human element, emotion and adaptability, creating a truly engaging and lifelike simulation.
 
 What it Does
 
-It models multiple agents (cars, drones, or fleets) racing in real time with events like crashes, pit stops, and recoveries. The built-in NeuroDrive system connects emotional states (focus, stress) to vehicle performance, making every race unpredictable and alive.
+It models multiple agents such as cars, drones, or fleets racing in real time with events like crashes, pit stops, and recoveries. The built-in NeuroDrive system connects emotional states like focus and stress to vehicle performance, making every race unpredictable and alive.
 
 Key Features
 
@@ -33,5 +33,3 @@ Time constraints limited UI refinement, but the core simulation logic and emotio
 What’s Next
 
 Refine the UI, add multiplayer modes, and integrate real neural or sensor-based emotional input.
-
-
