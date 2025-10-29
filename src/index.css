@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 30% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 28% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 28% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 30% 8%;
+
+    --secondary: 43 96% 56%;
+    --secondary-foreground: 220 30% 8%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 220 30% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 18%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Eagle Theme Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(217 91% 45%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(43 96% 56%) 0%, hsl(43 96% 45%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(220 30% 8%) 0%, hsl(217 91% 15%) 100%);
+    --gradient-sunrise: linear-gradient(135deg, hsl(43 96% 56%) 0%, hsl(28 100% 60%) 50%, hsl(217 91% 60%) 100%);
+    --gradient-translucent: linear-gradient(135deg, hsl(217 91% 60% / 0.1) 0%, hsl(43 96% 56% / 0.1) 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    --shadow-gold-glow: 0 0 40px hsl(43 96% 56% / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.4);
+    --shadow-interactive: 0 4px 20px hsl(217 91% 60% / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glide: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Translucent Backgrounds */
+    --bg-translucent: hsl(220 30% 12% / 0.7);
+    --bg-translucent-light: hsl(220 30% 12% / 0.5);
+    --bg-translucent-overlay: hsl(220 30% 8% / 0.9);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .bg-translucent {
+    background: var(--bg-translucent);
+    backdrop-filter: blur(12px);
+  }
+  
+  .bg-translucent-light {
+    background: var(--bg-translucent-light);
+    backdrop-filter: blur(8px);
+  }
+  
+  .interactive-card {
+    transition: var(--transition-smooth);
+  }
+  
+  .interactive-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-interactive);
+  }
+  
+  .interactive-card:active {
+    transform: translateY(0);
+  }
+}
